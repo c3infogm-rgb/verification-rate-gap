@@ -9,7 +9,7 @@ This repository provides example artifacts for the **Verification Kit** architec
 The core claim is:
 
 ```text
-R_dev 竏・max(0, G_rate 竏・V_rate)
+R_dev proportional to max(0, G_rate - V_rate)
 ```
 
 Where:
