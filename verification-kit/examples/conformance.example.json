@@ -1,0 +1,24 @@
+{
+  "schema_version": "verification-kit.conformance.v0.1",
+  "kit_id": "vk_2026_0605_example_001",
+  "profile": "verification_rate_gap.example_profile.v0.1",
+  "overall_status": "UNDEFINED",
+  "checks": [
+    {
+      "check_id": "MANIFEST_PRESENT",
+      "status": "PASS",
+      "description": "Run manifest exists and is parseable."
+    },
+    {
+      "check_id": "VERDICTS_PRESENT",
+      "status": "PASS",
+      "description": "Verdict records exist and are parseable."
+    },
+    {
+      "check_id": "SIGNATURE_PRESENT",
+      "status": "UNDEFINED",
+      "description": "Signature path is declared, but this example does not include a real signature."
+    }
+  ],
+  "notes": "Example profile only. Not a certification result."
+}

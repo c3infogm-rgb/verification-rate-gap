@@ -1,0 +1,33 @@
+{
+  "schema_version": "verification-kit.summary.v0.1",
+  "kit_id": "vk_2026_0605_example_001",
+  "total_cases": 20,
+  "verdict_distribution": {
+    "PASS": 8,
+    "HOLD": 7,
+    "ESCALATE": 3,
+    "FAIL": 0,
+    "UNDEFINED": 2
+  },
+  "non_pass_total": 12,
+  "top_reason_codes": [
+    {
+      "reason_code": "RC_EVIDENCE_MISSING",
+      "count": 5
+    },
+    {
+      "reason_code": "RC_UNSUPPORTED_INPUT",
+      "count": 2
+    },
+    {
+      "reason_code": "RC_ESCALATION_REQUIRED",
+      "count": 3
+    }
+  ],
+  "claim_boundary": {
+    "certification": false,
+    "production_ready": false,
+    "safety_guarantee": false,
+    "truth_guarantee": false
+  }
+}

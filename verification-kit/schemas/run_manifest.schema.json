@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/run_manifest.schema.json",
+  "title": "Verification Kit Run Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kit_id",
+    "created_at",
+    "created_by",
+    "scope",
+    "inputs",
+    "engine",
+    "outputs",
+    "verification",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "kit_id": {
+      "type": "string",
+      "pattern": "^vk_[A-Za-z0-9_\\-]+$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "object",
+      "required": [
+        "organization",
+        "system",
+        "operator_role"
+      ],
+      "properties": {
+        "organization": {
+          "type": "string"
+        },
+        "system": {
+          "type": "string"
+        },
+        "operator_role": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "workflow_type",
+        "claim_boundary",
+        "excluded_claims"
+      ],
+      "properties": {
+        "workflow_type": {
+          "type": "string"
+        },
+        "claim_boundary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "excluded_claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "inputs": {
+      "type": "object"
+    },
+    "engine": {
+      "type": "object",
+      "required": [
+        "name",
+        "version",
+        "deterministic_mode",
+        "runtime_llm_used",
+        "sha256"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "deterministic_mode": {
+          "type": "boolean"
+        },
+        "runtime_llm_used": {
+          "type": "boolean"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "outputs": {
+      "type": "object"
+    },
+    "verdict_summary": {
+      "type": "object"
+    },
+    "verification": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

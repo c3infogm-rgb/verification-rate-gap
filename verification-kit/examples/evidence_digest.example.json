@@ -1,0 +1,14 @@
+{
+  "schema_version": "verification-kit.evidence-digest.v0.1",
+  "kit_id": "vk_2026_0605_example_001",
+  "evidence_items": [
+    {
+      "evidence_id": "case_001",
+      "type": "digest",
+      "sha256": "sha256:REPLACE_WITH_CASE_001_EVIDENCE_HASH",
+      "description": "Evidence digest for case_001."
+    }
+  ],
+  "raw_evidence_public": false,
+  "notes": "Digest only. Raw evidence may be controlled or unavailable."
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/verdict_record.schema.json",
+  "title": "Verification Kit Verdict Record",
+  "type": "object",
+  "required": [
+    "case_id",
+    "input_hash",
+    "verdict",
+    "reason_codes",
+    "spec_refs",
+    "evidence_refs",
+    "permit_token_issued"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "input_hash": {
+      "type": "string"
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "HOLD",
+        "ESCALATE",
+        "FAIL",
+        "UNDEFINED"
+      ]
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "spec_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permit_token_issued": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

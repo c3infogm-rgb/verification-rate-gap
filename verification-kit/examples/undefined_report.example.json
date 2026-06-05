@@ -1,0 +1,28 @@
+{
+  "schema_version": "verification-kit.undefined-report.v0.1",
+  "kit_id": "vk_2026_0605_example_001",
+  "undefined_cases": [
+    {
+      "case_id": "case_003",
+      "reason_codes": [
+        "RC_UNSUPPORTED_INPUT"
+      ],
+      "spec_refs": [
+        "release_gate.v0.1#undefined_conditions"
+      ],
+      "description": "The input category was not covered by the declared policy."
+    }
+  ],
+  "hold_cases": [
+    {
+      "case_id": "case_002",
+      "reason_codes": [
+        "RC_EVIDENCE_MISSING"
+      ],
+      "spec_refs": [
+        "release_gate.v0.1#evidence_requirements"
+      ],
+      "description": "Required evidence was missing."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{"case_id": "case_001", "input_hash": "sha256:REPLACE_INPUT_HASH_001", "verdict": "PASS", "reason_codes": ["RC_OK"], "spec_refs": ["release_gate.v0.1#pass_conditions"], "evidence_refs": ["evidence_digest.json#case_001"], "permit_token_issued": true}
+{"case_id": "case_002", "input_hash": "sha256:REPLACE_INPUT_HASH_002", "verdict": "HOLD", "reason_codes": ["RC_EVIDENCE_MISSING"], "spec_refs": ["release_gate.v0.1#evidence_requirements"], "evidence_refs": [], "permit_token_issued": false}
+{"case_id": "case_003", "input_hash": "sha256:REPLACE_INPUT_HASH_003", "verdict": "UNDEFINED", "reason_codes": ["RC_UNSUPPORTED_INPUT"], "spec_refs": ["release_gate.v0.1#undefined_conditions"], "evidence_refs": [], "permit_token_issued": false}
