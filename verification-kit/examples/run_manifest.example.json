@@ -4,7 +4,7 @@
   "created_at": "2026-06-05T08:00:00Z",
   "created_by": {
     "organization": "C3 Social Design Center",
-    "system": "AMS Phase 5 prototype",
+    "system": "replay_engine_prototype",
     "operator_role": "research_prototype"
   },
   "scope": {
@@ -39,7 +39,7 @@
     }
   },
   "engine": {
-    "name": "ams_replay_engine",
+    "name": "replay_engine",
     "version": "v0.1-prototype",
     "deterministic_mode": true,
     "runtime_llm_used": false,
